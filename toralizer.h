@@ -8,11 +8,14 @@
 
 #define PROXY "127.0.0.1"
 #define PROXYPORT 9050
+#define reqsize sizeof(struct proxy_request)
+#define ressize sizeof(struct proxy_response)
 
 typedef unsigned int int32;
 typedef unsigned long int int64;
 typedef unsigned short int int16;
 typedef unsigned char int8;
+
 
 struct proxy_request{
 
@@ -37,3 +40,6 @@ int32 dstIP; // destination IP
 
 
 typedef struct proxy_response Res;
+
+Req *request(const int , const char*);
+int main(int,char**);

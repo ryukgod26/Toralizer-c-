@@ -1,5 +1,10 @@
 #include "toralizer.h"
 
+Req *request(const int Port,const char* Ip){
+    Req *req;
+
+    req = malloc(reqsize);
+}
 
 int main(int argc,char *argsv[])
 {
