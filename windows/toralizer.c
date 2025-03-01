@@ -6,7 +6,7 @@ Req *request(const int Port,const char* Ip){
     req = malloc(reqsize);
 }
 
-int main(int argc,char *argsv[])
+int main(int argc,char* argsv[])
 {
 
 int Port;
